@@ -171,3 +171,77 @@ body{
     width: 80px;
     margin-bottom: 3px;
 }
+.deals-of-the-day{
+    margin-top: 30px;
+}
+
+.deals-of-the-day-text{
+   position: relative;
+   top: 5px;
+   left: 80px;
+}
+
+.view-all{
+    position: absolute;
+    right: 80px;
+}
+
+.btn-view-all{
+    color: #fff;
+    border-radius: 2px;
+    border:1px solid #2874f0;
+    background: #2874f0;
+    letter-spacing: 1px;
+    height: 50px;
+    width: 140px;
+    padding: 10px 30px;
+    font-weight: bold;
+    margin: 0px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.deals-of-the-day-items{
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.deals-of-the-day-list{
+    list-style: none;
+    justify-content: space-around;
+    max-width: 1280px;
+    width: 100%;
+}
+
+.deals-of-the-day-item {
+    padding: 10px 30px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.deals-of-the-day-item img{
+    width: 250px;
+    height: 300px;
+}
+
+.deals-of-the-day-item .title{
+    margin-top: 20px;
+    font-weight: 550;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.deals-of-the-day-item .price{
+    margin-top: 20px;
+    font-weight: 200;
+    font-size: 22px;
+    color: rgb(111,145,89);
+}
+
+.deals-of-the-day-item .desc{
+    margin-top: 20px;
+    font-weight: 200;
+    font-size: 22px;
+    color: rgb(160,160,160)
+}
