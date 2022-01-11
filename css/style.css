@@ -245,3 +245,11 @@ body{
     font-size: 22px;
     color: rgb(160,160,160)
 }
+
+.more:hover .fa-angle-down::before {
+    content: "\f106";
+}
+
+.heading-item-name:hover  .fa-angle-down::before{
+    content: "\f106";
+}
