@@ -187,6 +187,20 @@ body {
   right: 80px;
 }
 
+.view-all-one {
+  position: absolute;
+  right: 400px;
+}
+
+.img-fluid{
+  position: relative;
+  top:26px;
+  left: 250px;
+  width: 200px;
+  border: 1px solid rgb(203,196,63);
+  cursor: pointer;
+}
+
 .btn-view-all {
   color: #fff;
   border-radius: 2px;
@@ -204,7 +218,16 @@ body {
 }
 
 .deals-of-the-day-items {
+  position: relative;
+  left: 145px;
   justify-content: center;
+  margin-top: 50px;
+}
+
+.electro-items {
+  position: absolute;
+  justify-content: center;
+  left: 145px;
   margin-top: 50px;
 }
 
@@ -308,4 +331,13 @@ body {
   transition: none;
 }
 
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+}
 
