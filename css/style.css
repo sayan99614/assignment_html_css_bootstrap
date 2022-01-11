@@ -272,9 +272,12 @@ body {
 
 .login-dropdown-list{
     position: absolute;
+    left: 50px;
+    top: 10px;
     list-style: none;
     background-color: #fff;
     width: max-content;
+    padding: 10px;
     box-shadow: 0 4px 16px 0 rgb(0, 0, 0, 0.20);
     transform: translate(-30px);
 }
@@ -289,13 +292,12 @@ body {
     background: #fafafa;
 }
 .pointer{
-    margin: 0px;
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     background: #fff;
     transform: rotate(45deg);
-    position: relative;
-    top: 10px;
+    position: absolute;
+    top: px;
     left: 50%;
 }
 .login:hover .login-dropdown{
