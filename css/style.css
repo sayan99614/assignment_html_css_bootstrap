@@ -5,10 +5,13 @@
 }
 
 body {
-  font-family: "roboto arial sans-serif";
+  font-family: Roboto,Arial,sans-serif;
+  letter-spacing: 0;
   text-decoration: none;
   min-height: 140vh;
   background: #f1f3f6;
+  line-height: 1.4;
+  font-size: 14px;
 }
 
 .flex {
@@ -31,7 +34,7 @@ body {
 .heading-navigation {
   background-color: rgb(40, 116, 240);
   width: 100%;
-  height: 56px;
+  height: 80px;
   position: sticky;
   top: 0;
   z-index: 2;
@@ -56,15 +59,16 @@ body {
   color: whitesmoke;
 }
 .flip_logo img {
-  width: 75px;
+  width: 100px;
 }
 .anchor {
-  font-size: 11px;
+  font-size: 15px;
   font-style: italic;
-  margin-top: -5px;
+  margin-top: -3px;
 }
 .plus img {
-  width: 10px;
+  width: 15px;
+  margin-top: -7px;
 }
 .plus-txt {
   color: #ffe500;
@@ -76,7 +80,7 @@ body {
   width: 708px;
 }
 .search-bar {
-  max-width: 564px;
+  max-width: 700px;
   width: 100%;
   margin-left: 10px;
   box-shadow: 0px 2px 4px 0 rgb(0, 0, 0, 0.23);
@@ -84,7 +88,7 @@ body {
 .search-box {
   outline: none;
   padding: 0px 16px;
-  height: 36px;
+  height: 40px;
   border-radius: 2px 0px 0px 2px;
   border: 0;
   width: 100%;
@@ -95,7 +99,7 @@ body {
   border: 1px solid #fff;
   padding: 4px 12px 4px 8px;
   width: 44px;
-  height: 36px;
+  height: 40px;
   cursor: pointer;
   border-radius: 0px 2px 2px 0px;
   color: #2874f0;
@@ -115,7 +119,7 @@ body {
   border: 1px solid #fff;
   background: #fff;
   letter-spacing: 1px;
-  height: 32px;
+  height: 40px;
   padding: 6px 40px;
   font-weight: bold;
   margin: 0px 20px;
@@ -129,74 +133,66 @@ body {
   left: 45px;
 }
 
-.more-text,
-.cart-text {
+.more-text, .cart-text {
   color: #fff;
   font-weight: bold;
   margin: 0px 20px;
   cursor: pointer;
-  font-size: 16;
+  font-size: 20px;
 }
 
-.heading-categories {
-  background: #fff;
-  justify-content: center;
-  min-height: 112px;
+
+.head-cat p{
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+.head-line{
   border-bottom: 2px solid lightgray;
-}
-
-.heading-categories-list {
-  list-style: none;
-  justify-content: space-between;
-  max-width: 1280px;
   width: 100%;
 }
 
-.heading-categories-items {
-  padding: 12px 8px;
+.head-cat:hover {
   cursor: pointer;
-  text-align: center;
-}
-
-.heading-categories-items:hover {
   color: #2874f0;
 }
 
-.heading-item-name {
-  font-weight: bold;
-  font-size: 16px;
-}
 
 .ca-image {
-  height: 80px;
-  width: 80px;
+  height: 90px;
+  width: 90px;
   margin-bottom: 3px;
 }
 .deals-of-the-day {
-  margin-top: 30px;
+  position: relative;
+  left: 50px;
 }
+
+.deals-of-the-day-item{
+  padding: 25px 15px;
+}
+
 
 .deals-of-the-day-text {
+  font-family:Roboto,Arial,sans-serif;
+  color: black;
+  font-weight: bold;
   position: relative;
-  top: 5px;
-  left: 80px;
+  left: 50px;
 }
 
-.view-all {
-  position: absolute;
-  right: 80px;
-}
-
-.view-all-one {
-  position: absolute;
-  right: 400px;
+.head-cat{
+  font-family: Roboto,Arial,sans-serif;
+  margin-left: 55px;
+  margin-right: 55px;
 }
 
 .img-fluid{
-  position: relative;
-  top:26px;
-  left: 250px;
-  width: 200px;
+  width: 90%;
   border: 1px solid rgb(203,196,63);
   cursor: pointer;
 }
@@ -217,53 +213,18 @@ body {
   font-size: 16px;
 }
 
-.deals-of-the-day-items {
-  position: relative;
-  left: 145px;
-  justify-content: center;
-  margin-top: 50px;
-}
-
-.electro-items {
-  position: absolute;
-  justify-content: center;
-  left: 145px;
-  margin-top: 50px;
-}
-
-.deals-of-the-day-list {
-  list-style: none;
-  justify-content: space-around;
-  max-width: 1280px;
-  width: 100%;
-}
-
-@media screen and (max-width: 900px) and (min-width: 200px) {
-  .deals-of-the-day-list {
-    list-style: none;
-    justify-content: space-around;
-    max-width: 1280px;
-    width: 100%;
-    flex-wrap: wrap;
-  }
-}
-
-.deals-of-the-day-item {
-  padding: 10px 30px;
-  cursor: pointer;
-  text-align: center;
-}
 
 .deals-of-the-day-item img {
-  width: 250px;
-  height: 300px;
+ opacity: 1;
 }
 
 .deals-of-the-day-item .title {
-  margin-top: 20px;
-  font-weight: 550;
-  font-size: 24px;
-  line-height: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .deals-of-the-day-item .price {
@@ -329,15 +290,5 @@ body {
 
 .login:hover .login-btn{
   transition: none;
-}
-
-.row{
-  display: flex;
-  flex-direction: row;
-}
-
-.col{
-  display: flex;
-  flex-direction: column;
 }
 
