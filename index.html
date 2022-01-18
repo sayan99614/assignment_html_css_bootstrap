@@ -7,7 +7,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Flipkart</title>
@@ -15,7 +20,7 @@
   <body>
     <!-- navbar -->
     <nav class="heading-navigation flex" id="navigation-heading">
-      <div class="nav-container flex">
+      <div class="nav-container flex p-3">
         <div class="logo flex">
           <a href="./index.html" class="flip_logo">
             <img src="./images/logo.png" alt="Flipkart" />
@@ -57,64 +62,75 @@
         </div>
         <div class="cart">
           <span class="cart-text">
-            <i class="fa fa-shopping-cart"></i> Cart</span>
+            <i class="fa fa-shopping-cart"></i> Cart</span
+          >
         </div>
       </div>
     </nav>
-
-    <div class="container">
-      <div class="d-flex justify-content-around mt-2">
-        <div class="head-cat">
-          <img src="./images/offer.png" alt="" class="ca-image" />
-          <p class="heading-item-name">Top offers</p>
-        </div>
-        <div  class="head-cat">
-          <img src="./images/grocery.png" alt="" class="ca-image" />
-          <p class="heading-item-name">Grocery</p>
-        </div>
-        <div class="head-cat">
-          <img src="./images/mobile.png" alt="" class="ca-image" />
-          <p class="heading-item-name">Mobile</p>
-        </div>
-        <div class="head-cat">
-          <img src="./images/fashion.png" alt="" class="ca-image" />
-          <p class="heading-item-name">Fashion</p>
-        </div>
-        <div class="head-cat">
-          <img src="./images/electro.png" alt="" class="ca-image" />
-          <p class="heading-item-name">Electronics</p>
-        </div>
-        <div class="head-cat">
-          <img src="./images/home.jpg" alt="" class="ca-image" />
-          <p class="heading-item-name">Home</p>
-        </div>
-        <div class="head-cat">
-          <img src="./images/appls.png" alt="" class="ca-image" />
-          <p class="heading-item-name">Appliances</p>
-        </div>
-        <div class="head-cat">
-          <img src="./images/travel.png" alt="" class="ca-image" />
-          <p class="heading-item-name">Travel</p>
-        </div>
-        <div class="head-cat">
-          <img src="./images/toys.png" alt="" class="ca-image" />
-          <p class="heading-item-name">Beauty, Toys & More</p>
+    <div class="shadow">
+      <div class="container">
+        <div
+          class="d-flex justify-content-around mt-2 p-1"
+          id="head-cat-container"
+        >
+          <div class="head-cat">
+            <img src="./images/offer.png" alt="" class="ca-image" />
+            <p class="heading-item-name">Top offers</p>
+          </div>
+          <div class="head-cat">
+            <img src="./images/grocery.png" alt="" class="ca-image" />
+            <p class="heading-item-name">Grocery</p>
+          </div>
+          <div class="head-cat">
+            <img src="./images/mobile.png" alt="" class="ca-image" />
+            <p class="heading-item-name">Mobile</p>
+          </div>
+          <div class="head-cat">
+            <img src="./images/fashion.png" alt="" class="ca-image" />
+            <p class="heading-item-name">Fashion</p>
+          </div>
+          <div class="head-cat">
+            <img src="./images/electro.png" alt="" class="ca-image" />
+            <p class="heading-item-name">Electronics</p>
+          </div>
+          <div class="head-cat">
+            <img src="./images/home.jpg" alt="" class="ca-image" />
+            <p class="heading-item-name">Home</p>
+          </div>
+          <div class="head-cat">
+            <img src="./images/appls.png" alt="" class="ca-image" />
+            <p class="heading-item-name">Appliances</p>
+          </div>
+          <div class="head-cat">
+            <img src="./images/travel.png" alt="" class="ca-image" />
+            <p class="heading-item-name">Travel</p>
+          </div>
+          <div class="head-cat">
+            <img src="./images/toys.png" alt="" class="ca-image teddy" />
+            <p class="heading-item-name">Beauty, Toys & More</p>
+          </div>
         </div>
       </div>
     </div>
     <div class="head-line"></div>
-    <section class="mt-5">
-      <div class="row">
-        <div class="col-sm-10">
+    <section class="">
+      <div class="row p-1">
+        <div class="col-sm-1"></div>
+        <div class="col col-sm-8">
           <div class="d-flex justify-content-between">
             <div class="deals-of-the-day-text">
               <h2>Deals of the day</h2>
+              <h3 class="deals-of-the-day-timer">
+                <i class="fa fa-clock-o"></i> 22:07:36 left
+              </h3>
             </div>
             <div>
               <button class="view-all-one btn-view-all">View All</button>
             </div>
           </div>
-          <div class="text-center mt-3 d-flex justify-content-around deals-of-the-day">
+          <div
+            class="text-center mt-5 d-flex justify-content-around deals-of-the-day"
+          >
             <div class="deals-of-the-day-item">
               <img src="./images/saari.jpg" alt="saari" />
               <p class="title">Sara,Divastri & More</p>
@@ -147,55 +163,62 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-2">
-          <img class="img-fluid" src="./images/card.jpg"  alt="card">
+        <div class="col col-sm-2">
+          <img class="img-fluid shadow-sm" src="./images/card.jpg" alt="card" />
         </div>
+        <div class="col-sm-1"></div>
       </div>
     </section>
-
-    <section class="mt-5">
-      <div class="col-sm-12">
-        <div class="d-flex justify-content-between">
-          <div class="deals-of-the-day-text">
-            <h2>Best in Electronics!</h2>
+    <section>
+      <div class="row p-1">
+        <div class="col-sm-1"></div>
+        <div class="col col-sm-10 electro">
+          <div class="d-flex justify-content-between">
+            <div class="deals-of-the-day-text">
+              <h2>Best in Electronics!</h2>
+            </div>
+            <div>
+              <button class="view-all-one btn-view-all">View All</button>
+            </div>
           </div>
-          <div>
-            <button class="view-all-one btn-view-all">View All</button>
-          </div>
-        </div>
-        <div class="text-center mt-3 d-flex justify-content-around deals-of-the-day" >
-          <div class="deals-of-the-day-item">
+          <div
+          class="text-center mt-3 d-flex deals-of-the-day"
+        >
+          <div class="deals-of-the-day-item elect ">
             <img src="./images/cable.jpeg" alt="cable" />
             <p class="title">Cabels Charger & More</p>
             <p class="price">Starting from 129&#x20B9;</p>
             <p class="desc">Shop now!</p>
           </div>
-          <div class="deals-of-the-day-item mt-5">
+          <div class="deals-of-the-day-item elect ">
             <img src="./images/printer.jpeg" alt="cable" />
             <p class="title">Top Rated Printer</p>
             <p class="price">From 3445&#x20B9;</p>
             <p class="desc">HP, EPSON & More</p>
           </div>
-          <div class="deals-of-the-day-item">
+          <div class="deals-of-the-day-item elect">
             <img src="./images/tripod.jpeg" alt="cable" />
             <p class="title">Camera Tripods</p>
             <p class="price">From 990&#x20B9;</p>
             <p class="desc">Digitech,Kotak,PhotoPro</p>
           </div>
-          <div class="deals-of-the-day-item mt-2">
+          <div class="deals-of-the-day-item elect">
             <img src="./images/headphone.jpeg" alt="headphone" />
-            <p class="title">Redgear Headphone with 7.1 sorrund sound</p>
+            <p class="title">Redgear Headphone</p>
             <p class="price">Just 1899&#x20B9;</p>
+            <p class="desc">Philips, Jbl & More</p>
           </div>
-          <div class="deals-of-the-day-item">
+          <div class="deals-of-the-day-item elect">
             <img src="./images/trimmer.jpeg" alt="trimmer" />
             <p class="title">Best Trimmers!</p>
             <p class="price">Upto 70% off</p>
             <p class="desc">Philips, Nova & More</p>
           </div>
         </div>
+        </div>
+        </div>
+        <div class="col-sm-1"></div>
       </div>
     </section>
   </body>
-  </html>
-  
+</html>
