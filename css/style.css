@@ -1,4 +1,4 @@
-* {
+ * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -8,6 +8,7 @@ body {
   font-family: Roboto,Arial,sans-serif;
   letter-spacing: 0;
   text-decoration: none;
+  color: rgb(33,33,33);
   min-height: 140vh;
   background: #f1f3f6;
   line-height: 1.4;
@@ -46,7 +47,7 @@ body {
   margin: auto;
   width: 100%;
   position: relative;
-  left: 60px;
+  left: 30px;
 }
 
 .logo {
@@ -83,12 +84,12 @@ body {
   max-width: 700px;
   width: 100%;
   margin-left: 10px;
-  box-shadow: 0px 2px 4px 0 rgb(0, 0, 0, 0.23);
+  box-shadow: 0px 2px 4px 1px rgb(0, 0, 0, 0.23);
 }
 .search-box {
   outline: none;
   padding: 0px 16px;
-  height: 40px;
+  height: 45px;
   border-radius: 2px 0px 0px 2px;
   border: 0;
   width: 100%;
@@ -99,7 +100,7 @@ body {
   border: 1px solid #fff;
   padding: 4px 12px 4px 8px;
   width: 44px;
-  height: 40px;
+  height: 45px;
   cursor: pointer;
   border-radius: 0px 2px 2px 0px;
   color: #2874f0;
@@ -119,8 +120,8 @@ body {
   border: 1px solid #fff;
   background: #fff;
   letter-spacing: 1px;
-  height: 40px;
-  padding: 6px 40px;
+  height: 44px;
+  padding: 10px 50px;
   font-weight: bold;
   margin: 0px 20px;
   cursor: pointer;
@@ -141,18 +142,27 @@ body {
   font-size: 20px;
 }
 
-
 .head-cat p{
-  font-weight: bold;
-  font-size: 16px;
+  font-family: Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
   text-align: center;
   white-space: nowrap;
-  overflow: hidden;
 }
 
 
+.head-cat{
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
 .head-line{
   border-bottom: 2px solid lightgray;
+  box-shadow: rgb(177 174 174) 3px 3px 9px -3px;
   width: 100%;
 }
 
@@ -161,40 +171,46 @@ body {
   color: #2874f0;
 }
 
-
 .ca-image {
   height: 90px;
   width: 90px;
   margin-bottom: 3px;
 }
-.deals-of-the-day {
-  position: relative;
-  left: 50px;
-}
-
-.deals-of-the-day-item{
-  padding: 25px 15px;
-}
-
 
 .deals-of-the-day-text {
+  display: flex;
   font-family:Roboto,Arial,sans-serif;
-  color: black;
-  font-weight: bold;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 41px;
   position: relative;
-  left: 50px;
 }
 
-.head-cat{
-  font-family: Roboto,Arial,sans-serif;
-  margin-left: 55px;
-  margin-right: 55px;
+.deals-of-the-day-timer{
+  position: relative;
+  left: 17px;
+  top:10px;
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 22px;
+  color: #a0a0a0;
 }
+
 
 .img-fluid{
+  position:relative;
+  top:7px;
+  left: 15px;
   width: 90%;
-  border: 1px solid rgb(203,196,63);
+  height: 100%;
+  border: 2px solid rgb(203,196,63);
   cursor: pointer;
+}
+
+.col-sm-8,.col-sm-10{
+  margin-top: 10px;
+  padding: 30px;
+  box-shadow: 0px 0px 5px 2px rgb(0, 0, 0, 0.23);
 }
 
 .btn-view-all {
@@ -204,8 +220,8 @@ body {
   background: #2874f0;
   letter-spacing: 1px;
   height: 50px;
-  width: 140px;
-  padding: 10px 30px;
+  width: 130px;
+  padding: 5px 20px;
   font-weight: bold;
   margin: 0px 20px;
   cursor: pointer;
@@ -215,30 +231,38 @@ body {
 
 
 .deals-of-the-day-item img {
+ height: 250px; 
+ max-height: 100%;
+ max-width: 100%;
  opacity: 1;
+}
+.deals-of-the-day-item{
+  text-align: center;
 }
 
 .deals-of-the-day-item .title {
+    margin-top: 20px;
     font-size: 20px;
+    font-style: normal;
     font-weight: 500;
-    margin-top: 15px;
-    white-space: nowrap;
+    line-height: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
 .deals-of-the-day-item .price {
-  margin-top: 20px;
-  font-weight: 200;
-  font-size: 22px;
-  color: rgb(111, 145, 89);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(56, 142, 60);
+  line-height: 22px;
 }
 
 .deals-of-the-day-item .desc {
-  margin-top: 20px;
-  font-weight: 200;
-  font-size: 22px;
-  color: rgb(160, 160, 160);
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 14px;
+  color: rgb(125,128,146);
 }
 
 .more:hover .fa-angle-down::before {
@@ -292,3 +316,19 @@ body {
   transition: none;
 }
 
+.teddy{
+  position: relative;
+  left: 30px;
+}
+
+.one{
+  position: relative;
+  right: 313px;
+}
+.elect{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-right: 50px;
+
+}
