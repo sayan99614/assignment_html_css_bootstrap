@@ -19,6 +19,10 @@ body {
   border: none;
 }
 
+.margin-top{
+  margin-top: 2px;
+}
+
 .flex {
   display: flex;
 }
