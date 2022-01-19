@@ -199,12 +199,13 @@ body {
 
 .img-fluid{
   position:relative;
+  zoom: 20px;
   top:20px;
   left: 0px;
   right: 20px;
   width: 100%;
   height: 90%;
-  border: 2px solid rgb(203,196,63);
+  border: 4px solid rgb(203,196,63);
   cursor: pointer;
 }
 
